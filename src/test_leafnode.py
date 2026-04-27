@@ -18,3 +18,6 @@ class TestLeafNode(unittest.TestCase):
     def test_leaf_to_html_without_tag(self):
         node = LeafNode(None, "just text")
         self.assertEqual(node.to_html(), "just text")
+
+if __name__ == "__main__":
+    unittest.main()
